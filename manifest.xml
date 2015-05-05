@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<App uuid="20d22cb2-2f57-4d3e-912c-8b6bde2c2d">
+   <Name>Jssor Slider</Name>
+   <Author>Incomedia</Author>
+   <Version>4</Version>
+   <Category>Galleries</Category>
+   <Description l10n-id="general-description">Create a gallery using the free Jssor slider.</Description>
+   <ShowPreview>True</ShowPreview>
+   <Resources>
+      <Resource src="jssor.slider.min.js" action="copy" autolink="true" shared="true" />
+      <Resource src="jssor.slider.css" action="copy" autolink="true" shared="true" />
+   </Resources>
+   <Parameters>
+      <Tab>
+         <Label>Graphics</Label>
+         <Description l10n-id="description">Select the images you want to show.</Description>
+         <ShowPreview>True</ShowPreview>
+         <Fields>
+            <Field type="separator" id="sep1">
+               <Label l10n-id="sep1">Images list</Label>
+            </Field>
+            <Field type="filelist" id="images">
+               <Extensions>jpg,png</Extensions>
+               <UpdatesPreview>true</UpdatesPreview>
+            </Field>
+            <Field type="separator" id="sep2">
+               <Label l10n-id="sep2">Style</Label>
+            </Field>
+            <Field type="checkbox" id="bullets">
+               <Label l10n-id="bullets">Show navigation bullets</Label>
+               <UpdatesPreview>true</UpdatesPreview>
+            </Field>
+            <Field type="checkbox" id="lazyloading">
+               <Label l10n-id="lazyloading">Lazy Loading</Label>
+               <DefaultChecked>false</DefaultChecked>
+            </Field>
+            <Field type="separator" id="sep3">
+               <Label l10n-id="sep3">Animation</Label>
+               <NewPanel>true</NewPanel>
+            </Field>
+            <Field type="checkbox" id="autoplay">
+               <Label l10n-id="autoplay">Autoplay</Label>
+               <DefaultChecked>true</DefaultChecked>
+               <UpdatesPreview>true</UpdatesPreview>
+            </Field>
+            <Field type="number" id="interval">
+               <Label l10n-id="interval">Autoplay Interval:</Label>
+               <DefaultValue>3</DefaultValue>
+               <MinValue>1</MinValue>
+               <MaxValue>60</MaxValue>
+               <UpdatesPreview>true</UpdatesPreview>
+            </Field>
+            <Field type="dropdown" id="transition">
+               <Label l10n-id="transition">Transition type:</Label>
+               <Options>
+                  <Option value="collapse">Collapse</Option>
+                  <Option value="dodge">Dodge</Option>
+                  <Option value="float">Float</Option>
+                  <Option value="random">Random</Option>
+                  <Option value="stripes">Stripes</Option>
+                  <Option value="swing-stairs">Swing (1)</Option>
+                  <Option value="swing-zigzag">Swing (2)</Option>
+                  <Option value="swing-random">Swing (3)</Option>                  
+                  <Option value="zigzag">Zig Zag</Option>
+               </Options>
+               <DefaultValue>random</DefaultValue>
+               <UpdatesPreview>true</UpdatesPreview>
+            </Field>
+         </Fields>
+      </Tab>
+   </Parameters>
+   <Hooks><![CDATA[
+      function OnBeforeImageElaboration(fieldId, image) {
+         if (fieldId == 'images') {
+            // Resize the images if required
+            if (image.sourceWidth > currentObject.width) {
+               image.outputHeight = currentObject.width / image.sourceWidth * image.sourceHeight;
+               image.outputWidth = currentObject.width;
+            }
+         }
+      }
+      function GetHeight() {
+         if (wsx5.mode == "uipreview") return 250;
+         var height = 0, images = parameters.images.list;
+         for (var i = 0; i < images.length; i++) {
+            if (images[i].isImage && height < images[i].height) {
+               height = images[i].height;
+            }
+         }
+         return height;
+      }
+      function IsEmpty() {
+         return parameters.images.list.length == 0;
+      }
+   ]]></Hooks>
+   <Output><![CDATA[
+      <?wsx5
+         var container_id = currentObject.id + "_container";
+         var width = currentObject.width;
+         var images = parameters.images.list;
+         var ll = parameters.lazyloading.checked && wsx5.mode != "uipreview" ? '2' : '';
+      ?>
+      <div id="<?wsx5 document.write(container_id) ?>" style="position: relative; top: 0px; left: 0px; width: <?wsx5 document.write(width) ?>px; height: <?wsx5 document.write(GetHeight()) ?>px;">
+         <!-- Slides Container -->
+         <div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: <?wsx5 document.write(width) ?>px; height: <?wsx5 document.write(GetHeight()) ?>px;">
+         <?wsx5
+            for (var i = 0; i < images.length; i++) {
+               document.write('<div><img data-u="image" alt="" src' + ll + '="' + images[i].path + '" style="width: ' + width + 'px;" /></div>\n');
+            }
+         ?>
+         </div>
+         <?wsx5
+            if (parameters.bullets.checked) {
+               document.write('<!-- bullet navigator container -->\n');
+               document.write('<div data-u="navigator" class="jssorb01" style="position: absolute; bottom: 16px; right: 10px;">\n');
+               document.write('<!-- bullet navigator item prototype -->\n');
+               document.write('<div data-u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>\n');
+               document.write('</div>\n');
+               document.write('<!-- Bullet Navigator Skin End -->\n');
+            }
+         ?>
+      </div>
+      <script type="text/javascript">
+         $(document).ready(function () {
+            var trs = [];
+            <?wsx5
+               var trans = parameters.transition.value;
+               if (trans == "random" || trans == "swing-stairs") {
+                  // Swing in stairs
+                  document.write("trs.push({$Duration:1200,$Delay:20,$Cols:8,$Rows:4,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$FlyDirection:9,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$JssorEasing$.$EaseInWave,$Top:$JssorEasing$.$EaseInWave,$Clip:$JssorEasing$.$EaseOutQuad},$ScaleHorizontal:0.2,$ScaleVertical:0.1,$Round:{$Left:1.3,$Top:2.5}});\n");
+               }
+               if (trans == "random" || trans == "swing-zigzag") {
+                  // Swing in zig zag
+                  document.write("trs.push({$Duration:1200,$Delay:20,$Cols:8,$Rows:4,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$FlyDirection:9,$Formation:$JssorSlideshowFormations$.$FormationZigZag,$Assembly:260,$Easing:{$Left:$JssorEasing$.$EaseInWave,$Top:$JssorEasing$.$EaseInWave,$Clip:$JssorEasing$.$EaseOutQuad},$ScaleHorizontal:0.2,$ScaleVertical:0.1,$Round:{$Left:1.3,$Top:2.5}});\n");
+               }
+               if (trans == "random" || trans == "swing-random") {
+                  // Swing in random
+                  document.write("trs.push({$Duration:1200,$Delay:80,$Cols:8,$Rows:4,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$FlyDirection:9,$Easing:{$Left:$JssorEasing$.$EaseInWave,$Top:$JssorEasing$.$EaseInWave,$Clip:$JssorEasing$.$EaseOutQuad},$ScaleHorizontal:0.2,$ScaleVertical:0.1,$Round:{$Left:1.3,$Top:2.5}});\n");
+               }
+               if (trans == "random" || trans == "dodge") {
+                  // Dodge pet inside
+                  document.write("trs.push({$Duration:1500,$Delay:20,$Cols:8,$Rows:4,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$FlyDirection:9,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$JssorEasing$.$EaseInWave,$Top:$JssorEasing$.$EaseInWave,$Clip:$JssorEasing$.$EaseOutQuad},$ScaleHorizontal:0.2,$ScaleVertical:0.1,$Round:{$Left:0.8,$Top:2.5}});\n");
+               }
+               if (trans == "random" || trans == "collapse") {
+                  // Collapse
+                  document.write("trs.push({$Duration:1000,$Delay:30,$Cols:8,$Rows:4,$Clip:15,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:2049,$Easing:$JssorEasing$.$EaseOutQuad});\n");
+               }
+               if (trans == "random" || trans == "stripes") {
+                  // Extrude stripe
+                  document.write("trs.push({$Duration:1000,$Delay:40,$Cols:12,$SlideOut:true,$FlyDirection:2,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Assembly:260,$Easing:{$Left:$JssorEasing$.$EaseInOutExpo,$Opacity:$JssorEasing$.$EaseInOutQuad},$ScaleHorizontal:0.2,$Opacity:2,$Outside:true,$Round:{$Top:0.5}});\n");
+               }
+               if (trans == "random" || trans == "zigzag") {
+                  // Zig Zag chee
+                  document.write("trs.push({$Duration:600,$Delay:50,$Cols:8,$Rows:4,$FlyDirection:5,$Formation:$JssorSlideshowFormations$.$FormationZigZag,$Assembly:1028,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$JssorEasing$.$EaseInCubic,$Top:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseOutQuad},$Opacity:2});\n");
+               }
+               if (trans == "random" || trans == "float") {
+                  // Float right random
+                  document.write("trs.push({$Duration:600,$Delay:50,$Cols:8,$Rows:4,$SlideOut:true,$FlyDirection:2,$Easing:{$Left:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseOutQuad},$Opacity:2});\n");
+               }
+            ?>
+            var options = {
+               $SlideshowOptions: {
+                  $Class: $JssorSlideshowRunner$,
+                  $Transitions: trs,
+                  $TransitionsOrder: <?wsx5 document.write(parameters.transition.value == "random" ? 0 : 1) ?>,
+                  $ShowLink: 2,
+                  $ContentMode: false
+               },
+               $AutoPlay: <?wsx5 document.write(parameters.autoplay.checked ? 1 : 0) ?>,
+               $AutoPlayInterval: <?wsx5 document.write(parameters.interval.value * 1000) ?>,
+               $FillMode: 1,
+               <?wsx5
+                  if (parameters.bullets.checked) {
+                     document.write('$BulletNavigatorOptions: {\n');
+                     document.write('\t$Class: $JssorBulletNavigator$,\n');
+                     document.write('\t$ChanceToShow: 2\n,');
+                     document.write('\t$AutoCenter: 1\n');
+                     document.write('}\n');
+                  }
+               ?>
+            };
+            var jssor_slider = new $JssorSlider$('<?wsx5 document.write(container_id) ?>', options);
+         });
+      </script>
+   ]]></Output>
+</App>

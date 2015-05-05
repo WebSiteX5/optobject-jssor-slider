@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebsiteX5LanguagesLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Languages>
+		<Language>
+			<Code><![CDATA[BR]]></Code>
+			<Name><![CDATA[Brasilian]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Início automático]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Exibir marcadores de navegação]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Escolher o tipo de Galeria e configurar o modo de exibição.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Tempo de exibição:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Lista]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Estilo]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Opções]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Efeito:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[CZ]]></Code>
+			<Name><![CDATA[Czech]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Automatické přehrávání]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Zobrazit navigační odrážky]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Vybrat typ galerie a nastavit režim zobrazení.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Čas zobrazení:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Seznam]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Styl]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Možnosti]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Efekt:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[DE]]></Code>
+			<Name><![CDATA[German]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Automatische Wiedergabe]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Aufzählungszeichen der Navigation anzeigen]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Galerietyp auswählen und Anzeigemodus bestimmen.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>general-description</Key>
+					<Value><![CDATA[Erstellen Sie eine Galerie mit dem kostenlosen Jssor Slider.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Anzeigedauer:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Liste]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Stil]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Optionen]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Effekt:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[EL]]></Code>
+			<Name><![CDATA[Greek]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Autoplay]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Δείξε Μπουλετάκια Πλοήγησης]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Επιλέξτε τον τύπο της Gallery και ορίστε τον τρόπο προβολής.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Εμφάνιση χρόνου:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Λίστα]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Στυλ]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Επιλογές]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[εφέ:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[EN]]></Code>
+			<Name><![CDATA[English]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Autoplay]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Show Navigation Bullets]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Choose the images you want to show and then apply the style of the gallery.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>general-description</Key>
+					<Value><![CDATA[Create an image gallery by using Jssor slider.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Display time:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Enable lazy loading (use less bandwidth)]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[List]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Style]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Options]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Effect:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[ES]]></Code>
+			<Name><![CDATA[Spanish]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Reproducción automática]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Mostrar Indicador de posición]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Seleccionar el tipo de galería y establecer la modalidad de visualización.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Tiempo de visualización:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Lista]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Estilo]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Opciones]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Efecto:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[FR]]></Code>
+			<Name><![CDATA[French]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Lecture automatique]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Afficher les puces de navigation]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Choisir le type de Galerie et spécifier le mode d'affichage.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Temps d'affichage :]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Liste]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Style]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Options]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Effet :]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[HU]]></Code>
+			<Name><![CDATA[Hungarian]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Automatikus lejátszás]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Pozíciójelzők feltüntetése]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Válasszon galériatípust és állítsa be a képernyőmódot.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Megjelenítési idő:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Lista]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Stílus]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Opciók]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Effektus:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[IT]]></Code>
+			<Name><![CDATA[Italian]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Avvia automaticamente]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Mostra Indicatore di posizione]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Scegli il tipo di Galleria e definisci le impostazioni relative alla modalità di visualizzazione.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>general-description</Key>
+					<Value><![CDATA[Crea una galleria di immagini usando Jssor Slider.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Tempo di visualizzazione:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Abilita il lazy loading (utilizza meno banda)]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Elenco]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Stile]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Opzioni]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Effetto:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[LV]]></Code>
+			<Name><![CDATA[Latvian]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Automatiska atskaņošana]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Rādīt navigācijas pogas]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Izvēlietie galeriju tipu un attēlošanas veidu]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Laika atspoguļojums:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Saraksts]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Stils]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Iespējas]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Effekts:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[NL]]></Code>
+			<Name><![CDATA[Dutch]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Automatisch afspelen]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Navigatieknoppen weergeven]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Kies het galerietype en stel de weergavemodus in.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Weergavetijd:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Lijst]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Stijl]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Opties]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Effect:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[PL]]></Code>
+			<Name><![CDATA[Polish]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Autoodtwarzanie]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Pokaż pasek wskaźnika]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Wybierz rodzaj galerii i ustaw tryb jej wyświetlania.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Czas wyświetlania:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Lista]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Styl]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Opcje]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Efekt:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[RU]]></Code>
+			<Name><![CDATA[Russian]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Автовоспроизведение]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Показать маркеры навигации]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Выберите тип галереи и задайте режим отображения.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Время отображения:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Список]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Стиль]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Параметры]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Эффект:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[SI]]></Code>
+			<Name><![CDATA[Slovenian]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Samodejno predvajaj]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Prikaži navigacijske kroglice]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Izberi vrsto galerije in določi način prikaza.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Čas prikaza:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Seznam]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Slog]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Možnosti]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Učinek:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[SK]]></Code>
+			<Name><![CDATA[Slovak]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Automatické prehrávanie]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Zobraziť ukazovateľ polohy]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Vybrať typ galérie a nastaviť režim zobrazenia.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Čas zobrazenia:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Zoznam]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Štýl]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Možnosti]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Efekt:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+		<Language>
+			<Code><![CDATA[TR]]></Code>
+			<Name><![CDATA[Turkish]]></Name>
+			<WritingDirection><![CDATA[LeftToRight]]></WritingDirection>
+			<Localizations>
+				<Localization>
+					<Key>autoplay</Key>
+					<Value><![CDATA[Otomatik çalıştır]]></Value>
+				</Localization>
+				<Localization>
+					<Key>bullets</Key>
+					<Value><![CDATA[Dolaşım İmlerini Göster]]></Value>
+				</Localization>
+				<Localization>
+					<Key>description</Key>
+					<Value><![CDATA[Galeri tipini seçin ve ekran modunu ayarlayın.]]></Value>
+				</Localization>
+				<Localization>
+					<Key>interval</Key>
+					<Value><![CDATA[Görüntüleme süresi:]]></Value>
+				</Localization>
+				<Localization>
+					<Key>lazyloading</Key>
+					<Value><![CDATA[Lazy loading]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep1</Key>
+					<Value><![CDATA[Liste]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep2</Key>
+					<Value><![CDATA[Stil]]></Value>
+				</Localization>
+				<Localization>
+					<Key>sep3</Key>
+					<Value><![CDATA[Seçenekler]]></Value>
+				</Localization>
+				<Localization>
+					<Key>transition</Key>
+					<Value><![CDATA[Efekt:]]></Value>
+				</Localization>
+			</Localizations>
+		</Language>
+	</Languages>
+</WebsiteX5LanguagesLibrary>
